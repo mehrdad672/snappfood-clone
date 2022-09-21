@@ -1,9 +1,18 @@
-import logo from './logo.svg';
+import Header from './UI/Header';
 import './App.css';
+import Categories from './Components/Categories';
 
 function App() {
-  return (
-   <p className='text-4xl'>salam</p>
+  return (<>
+  
+  <Header />
+  <Categories />
+
+  </>
+ 
+  
+
+
   );
 }
 
