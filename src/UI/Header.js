@@ -2,6 +2,7 @@ import svg1 from "../Assets/1.svg";
 import zarebin from '../Assets/svg-gobbler.svg'
 import snapsvg from "../Assets/2.svg";
 import banner from "../Assets/banner.png";
+import Slider from "./Slider";
 const Header = () => {
   return (
     <>
@@ -45,7 +46,7 @@ const Header = () => {
       <div className=" mx-10 items-center flex flex-col justify-center bg-[#f9fafb] w-full max-w-full">
         <div className="flex flex-col ml-[750px] mt-10 py-10  bg-[#f9fafb] max-w-full ">
           <div className="flex flex-row items-center space-x-1">
-            <h1 className="text-[#ff00a6] text-5xl font-bold">غذا</h1>
+            <Slider />
             <h1 className="text-[#3a3d42] text-5xl font-bold">سفارش آنلاین</h1>
           </div>
           <div className="flex py-2 text-left ml-[65px]">
