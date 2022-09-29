@@ -4,6 +4,9 @@ import snapsvg from "../Assets/2.svg";
 import banner from "../Assets/banner.png";
 import Slider from "./Slider";
 const Header = () => {
+  const clickhandler = ()=> {
+    console.log ('clicked')
+  }
   return (
     <>
     <div className="bg-[#f9fafb]">
@@ -45,7 +48,7 @@ const Header = () => {
       </div>
       <div className=" mx-10 items-center flex flex-col justify-center bg-[#f9fafb] w-full max-w-full">
         <div className="flex flex-col ml-[750px] mt-10 py-10  bg-[#f9fafb] max-w-full ">
-          <div className="flex flex-row items-center space-x-1">
+          <div className="flex flex-row items-center space-x-1 mr-8">
             <Slider />
             <h1 className="text-[#3a3d42] text-5xl font-bold">سفارش آنلاین</h1>
           </div>
@@ -53,7 +56,7 @@ const Header = () => {
             <p>...سفارش آنلاین غذا، میوه، نان، شیرینی و </p>
           </div>
           <div className="rounded-full bg-white p-1 pl-2">
-            <button>
+            <button onClick={clickhandler}>
                 <div className="flex flex-row justify-center items-center">
                     <button className="rounded-full bg-[#ff00a6] p-3 mr-20"><svg width="17" height="17" viewBox="0 0 17 17" fill="white"><path d="M7.75008 0.666016C11.6621 0.666016 14.8334 3.83733 14.8334 7.74935C14.8334 9.40479 14.2655 10.9276 13.3139 12.1336L16.5477 15.3684C16.8731 15.6939 16.8731 16.2215 16.5477 16.5469C16.2222 16.8724 15.6946 16.8724 15.3692 16.5469L12.1343 13.3132C10.9283 14.2648 9.40552 14.8327 7.75008 14.8327C3.83806 14.8327 0.666748 11.6614 0.666748 7.74935C0.666748 3.83733 3.83806 0.666016 7.75008 0.666016ZM7.75008 2.33268C4.75854 2.33268 2.33341 4.75781 2.33341 7.74935C2.33341 10.7409 4.75854 13.166 7.75008 13.166C10.7416 13.166 13.1667 10.7409 13.1667 7.74935C13.1667 4.75781 10.7416 2.33268 7.75008 2.33268Z"/></svg></button>
                     <input type="text" placeholder=".ابتدا آدرستان را انتخاب کنید"/>
