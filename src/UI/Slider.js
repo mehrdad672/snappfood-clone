@@ -9,7 +9,7 @@ const Slider = () => {
     
         return () => clearInterval(interval);
       }, []);
-    return  <div className="absolute right-[430px]">
+    return  <div className="absolute right-[220px] bottom-2">
         <h1 className="text-[#ff00a6] text-5xl font-bold">{texts[wordSlideIndex]}</h1>
     </div>
 }

@@ -66,7 +66,7 @@ const Categories = () => {
   const categorilist= Items.map(item => <CategoriItem imgurl={item.image} imgtag={item.tag} />);
   return (
     <>
-      <div className="px-8 grid grid-cols-6 gap-8 space-x-1 mt-96 max-w-full">
+      <div className="px-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8 space-x-1 mt-24 mb-20 max-w-full">
         {categorilist}
       </div>
     </>

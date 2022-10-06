@@ -10,28 +10,28 @@ import twitter from "./Assets/twitter.svg";
 const Footer = () => {
   return (
     <>
-      <div className="bg-[#f9fafb] flex flex-row max-w-full m-8 p-2">
-        <div className="flex flex-row">
+      <div className="font-iran bg-[#f9fafb] flex flex-row max-w-full flex-wrap md:flex-nowrap mx-8 justify-between items-start py-8 p-2">
+        <div className="flex flex-row order-last sm:basis-full md:basis-auto  md:order-first">
           <img className="h-[80px]" src={senf} alt="senf" />
           <img className="h-[80px]" src={logo} alt="logo" />
         </div>
-        <div className="flex flex-col space-y-4 text-[#3a3d42] font-[12px] items-end ml-36 justify-between text-[12px]">
+        <div className="flex flex-col space-y-4 text-[#3a3d42] font-[12px] items-end justify-between text-[12px]">
           <a href="#">تماس با اسنپ فود</a>
           <a href="#">پرسش های متداول</a>
           <a href="#">ثبت شکایات</a>
           <a href="#">اپلیکیشن موبایل</a>
         </div>
-        <div className="flex flex-col space-y-4 text-[#3a3d42] font-[12px] items-end ml-36 justify-between text-[12px]">
+        <div className="flex flex-col space-y-4 text-[#3a3d42] font-[12px] text-[12px]">
           <a href="#">درباره اسنپ فود</a>
           <a href="#">وبلاگ</a>
           <a href="#">قوانین سایت</a>
           <a href="#">حریم خصوصی</a>
           <a href="#">ثبت نام فروشندگان </a>
         </div>
-        <div className="ml-[100px] ">
-          <div className="flex flex-row ml-44">
+        <div className="">
+          <div className="flex flex-row items-center justify-end">
             <div>
-              <div className="flex flex-col justify-end items-end ">
+              <div className="flex flex-col items-end justify-center ">
                 <h1 className="text-[#ff00a6] text-2xl font-bold">اسنپ فود</h1>
                 <p className="text-[#53565c] text-sm mt-2">
                   تجربه سفارش غذا از زودفود تا اسنپ فود
@@ -42,27 +42,27 @@ const Footer = () => {
               <img className="h-[41px]" src={snapsvg} alt="snapp" />
             </div>
           </div>
-          <div className="flex flex-row space-x-4 ml-[130px] mt-4">
-            <div className="w-fit  ">
+          <div className="flex flex-row space-x-4 mt-4 mr-20">
+            <div className="w-fit">
               <a className="bg-white" href="#">
                 <img className="h-[40px] bg-white p-2 rounded-full border border-gray-500" src={aparat} />
               </a>
             </div>
-            <div className="w-fit  ">
+            <div className="w-fit ">
               <a className="bg-white" href="#">
                 <img className="h-[40px] bg-white p-2 rounded-full border border-gray-500 " src={instagram} />
               </a>
             </div>
-            <div className="w-fit  ">
+            <div className="w-fit ">
               <a className="bg-white" href="#">
                 <img className="h-[40px] bg-white p-2 rounded-full border border-gray-500 " src={linkedin} />
               </a>
-            </div><div className="w-fit  ">
+            </div><div className="w-fit ">
               <a className="bg-white" href="#">
                 <img className="h-[40px] bg-white p-2 rounded-full border border-gray-500 " src={telegram} />
               </a>
             </div>
-            <div className="w-fit  ">
+            <div className="w-fit ">
               <a className="bg-white" href="#">
                 <img className="h-[40px] bg-white p-3 border border-gray-500 rounded-full " src={twitter} />
               </a>

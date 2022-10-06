@@ -1,7 +1,7 @@
-import dummy from '../Assets/Categories/website_image_asian_1.jpg'
+
 const CategoriItem = (props) => {
     
-    return <div className='relative'>
+    return <div className=' font-iran flex relative'>
         <div className='rounded-lg'>
             <img className='rounded-xl' src={props.imgurl}></img>
         </div>
