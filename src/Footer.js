@@ -10,25 +10,25 @@ import twitter from "./Assets/twitter.svg";
 const Footer = () => {
   return (
     <>
-      <div className="font-iran bg-[#f9fafb] flex flex-row max-w-full flex-wrap md:flex-nowrap mx-8 justify-between items-start py-8 p-2">
-        <div className="flex flex-row order-last sm:basis-full md:basis-auto  md:order-first">
+      <div className=" font-iran bg-[#f9fafb] flex flex-row-reverse flex-wrap max-w-full  mx-8 justify-between items-start py-8 p-2">
+        <div className="flex flex-row order-4  p-8">
           <img className="h-[80px]" src={senf} alt="senf" />
           <img className="h-[80px]" src={logo} alt="logo" />
         </div>
-        <div className="flex flex-col space-y-4 text-[#3a3d42] font-[12px] items-end justify-between text-[12px]">
+        <div className="flex flex-col order-3 p-8 space-y-4 text-[#3a3d42] font-[12px] items-end justify-between text-[12px]">
           <a href="#">تماس با اسنپ فود</a>
           <a href="#">پرسش های متداول</a>
           <a href="#">ثبت شکایات</a>
           <a href="#">اپلیکیشن موبایل</a>
         </div>
-        <div className="flex flex-col space-y-4 text-[#3a3d42] font-[12px] text-[12px]">
+        <div className="flex flex-col order-2 p-8 space-y-4 text-[#3a3d42] font-[12px] text-[12px]">
           <a href="#">درباره اسنپ فود</a>
           <a href="#">وبلاگ</a>
           <a href="#">قوانین سایت</a>
           <a href="#">حریم خصوصی</a>
           <a href="#">ثبت نام فروشندگان </a>
         </div>
-        <div className="">
+        <div className="order-1 p-8">
           <div className="flex flex-row items-center justify-end">
             <div>
               <div className="flex flex-col items-end justify-center ">

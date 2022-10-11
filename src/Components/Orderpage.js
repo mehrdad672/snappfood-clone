@@ -74,21 +74,21 @@ const Orderpage = () => {
       <div className="flex mt-10">
         {/* Cart */}
         <div className="hidden md:hidden lg:w-[25vw] lg:block h-screen px-4 overflow-auto scrollbar-hide ">
-          <div className="bg-white w-full rounded-2xl text-right ">
+          {/* <div className="bg-white w-full rounded-2xl text-right ">
             {" "}
             to be ADDED
           </div>
           <div className="bg-white w-full rounded-2xl text-right ">
             {" "}
             to be ADDED
-          </div>
+          </div> */}
 
           <div  className="bg-white rounded-lg w-full ">
             <div className="flex flex-row justify-between items-center px-2 pt-3">
              
               <svg 
               
-                className="w-4 mr-36 text-red-800"
+                className="w-4  text-red-800"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 12 14"
                 fill="currentColor"

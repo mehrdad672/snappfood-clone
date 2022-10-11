@@ -4,9 +4,18 @@ import snapsvg from "../Assets/svg-6.svg";
 import banner from "../Assets/banner.png";
 import Slider from "./Slider";
 import Menu from "./menu";
-import Login from "./Login";
-import { useRef } from "react";
+import Login from "./Login"; 
+import LoginModal from './LoginModal'
+import { useRef , useState } from "react";
+import Modal from "@mui/material/Modal";
 const Header = () => {
+  const [modalShow , setModalShow]=useState(false)
+  const modalShowHandler = ()=>{
+setModalShow(true)
+  }
+  const modalCloseHandler = ()=>{
+    setModalShow(false)
+      }
   const kabab = useRef(null);
   const irani = useRef(null);
 
@@ -20,12 +29,13 @@ const Header = () => {
     console.log("clicked");
   };
   return (
+    <>
     <div className=" flex flex-col space-y-36 items-center bg-[#f9fafb] h-[700px] max-w-full m-9 p-9 rounded-br-[100px]">
       <div className=" w-full  max-w-full bg-[#f9fafb] ">
         <div className="bg-[#f9fafb] ">
           <div className="flex flex-row items-center justify-between bg-[#f9fafb] md:flex-row ">
             <div className="flex flex-row bg-[#f9fafb] space-x-2 items-center ">
-              <button className="font-iran bg-[#ff00a6] rounded-lg p-3 text-xl  text-white font-bold hover:bg-[#ff33a6] flex mr-2">
+              <button onClick={modalShowHandler} className="font-iran bg-[#ff00a6] rounded-lg p-3 text-xl  text-white font-bold hover:bg-[#ff33a6] flex mr-2">
                 ورود یا عضویت
               </button>
               <a
@@ -108,8 +118,11 @@ const Header = () => {
         </div>
       </div>
       <Menu />
-      <Login />
+      
     </div>
+
+    <Login modalClose={modalCloseHandler} modalOpen={modalShow} />
+    </>
   );
 };
 export default Header;
