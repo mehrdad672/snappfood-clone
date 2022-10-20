@@ -1,15 +1,14 @@
 import React from "react";
 import plus from "../Assets/plus.svg";
-const OrderItem = () => {
+
+const OrderItem = (props) => {
+  console.log(props.midi)
   return (
-    <div className="w-full flex flex-col mt-3 px-4 ">
+    <div className="w-full flex flex-col mt-3 px-4 space-y-3">
       <div className="w-full text-right">
-        <h1 className="font-bold text-xl">چلوکباب سلطانی</h1>
+        <h1 className="font-bold text-xl">{props.midi.name} </h1>
       </div>
-      <div className="w-full flex flex-row-reverse justify-between items-center mt-3 space-y-6">
-        <h1 className="">ظرف آلومیینیوم</h1>
-        <h1 className="">(5000 تومان)</h1>
-      </div>
+      
       <div className="flex items-center justify-between">
         <div className="flex items-center justify-center space-x-4 ">
           <button className="border w-3  rounded-full">
@@ -19,7 +18,7 @@ const OrderItem = () => {
               alt="sad"
             />
           </button>
-          <p>1</p>
+          <p>{props.midi.amount}</p>
           <svg
               className="w-3 text-gray-600"
               xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +30,7 @@ const OrderItem = () => {
             </svg>
         </div>
 
-        <h1> تومان135000</h1>
+        <h1> {props.midi.price} </h1>
         {/* <div> 
                 <div className='bg-white rounded-full border border-gray-600 shadow-lg w-6 h-6'><svg className='text-red-500 w-3 absolute inset-0.5' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="currentColor"><path d="M7 5H11C11.5523 5 12 5.44772 12 6C12 6.55228 11.5523 7 11 7H7V11C7 11.5523 6.55228 12 6 12C5.44772 12 5 11.5523 5 11V7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H5V1C5 0.447715 5.44772 0 6 0C6.55228 0 7 0.447715 7 1V5Z"></path></svg></div>
             </div> */}
